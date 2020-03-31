@@ -24,8 +24,8 @@
         android:layout_gravity="center"
         android:hint="centimeters"
         android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:text="" />
+        android:text=""
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView3"
@@ -55,23 +55,23 @@
     <TextView
         android:id="@+id/numBMI"
         android:layout_width="150dp"
-        android:textSize="20sp"
         android:layout_height="wrap_content"
-        android:textColor="#FFFF"
-        android:gravity="right"
         android:layout_gravity="right"
-        android:text="" />
+        android:gravity="right"
+        android:text=""
+        android:textColor="#FFFF"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/txtBMI"
         android:layout_width="150dp"
-        android:textSize="20sp"
         android:layout_height="wrap_content"
-        android:textColor="#FFFF"
         android:layout_gravity="right"
+        android:layout_marginTop="20dp"
         android:gravity="right"
         android:text=""
-        android:layout_marginTop="20dp"/>
+        android:textColor="#FFFF"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/descBMI"
@@ -86,10 +86,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:visibility="invisible"
+        android:layout_height="277dp"
+        android:layout_gravity="left"
         android:layout_marginTop="10dp"
+        android:visibility="invisible"
         app:srcCompat="@drawable/fatkid" />
 
 </LinearLayout>
