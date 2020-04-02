@@ -52,44 +52,66 @@
         android:layout_gravity="center"
         android:text="@string/calculate" />
 
-    <TextView
-        android:id="@+id/numBMI"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:gravity="right"
-        android:text=""
-        android:textColor="#FFFF"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/txtBMI"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="20dp"
-        android:gravity="right"
-        android:text=""
-        android:textColor="#FFFF"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/descBMI"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:textColor="#FFFF"
-        android:textSize="20dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="277dp"
-        android:layout_gravity="left"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"
-        app:srcCompat="@drawable/fatkid" />
+        android:layout_height="411dp">
+
+        <TextView
+            android:id="@+id/numBMI"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text=""
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtBMI"
+            android:layout_width="150dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numBMI"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text=""
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/descBMI"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtBMI"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text=""
+            android:textColor="#FFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="179dp"
+            android:layout_height="173dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:layout_marginEnd="216dp"
+            android:layout_marginRight="216dp"
+            android:layout_marginBottom="157dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/fatkid" />
+
+    </RelativeLayout>
 
 </LinearLayout>
