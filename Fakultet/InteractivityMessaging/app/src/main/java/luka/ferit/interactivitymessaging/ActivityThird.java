@@ -29,7 +29,7 @@ public class ActivityThird extends AppCompatActivity {
                 String message3 = etMessageFrom3rd.getText().toString();
                 Intent intent = new Intent();
                 intent.putExtra("msgFromThird", message3);
-                setResult(RESULT_OK);
+                setResult(RESULT_OK, intent);
                 finish();
             }
         });

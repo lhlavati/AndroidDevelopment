@@ -8,10 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etMessage, etMessage2;
+    EditText etMessage;
+    TextView etMessage2;
     Button btnCallSecondActivity, btnCallThirdActivity;
 
     @Override
@@ -58,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void processData(Bundle extras) {
-        if(extras.containsKey("msgFrom3rd")){
-            String message = extras.getString("msgFrom3rd");
-            etMessage.setText(message);
+        if(extras.containsKey("msgFromThird")){
+            String message = extras.getString("msgFromThird");
+            etMessage2.setText(message);
         }
     }
 }
