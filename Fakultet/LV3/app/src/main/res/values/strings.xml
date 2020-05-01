@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragments</string>
+
+    <string name="SwitchFragments">Switch Fragments</string>
+    <string name="EnterMessage">EnterMessage</string>
+    <string name="FirstFragment">First Fragment</string>
+    <string name="SecondFragment">Second Fragment</string>
+    <string name="ChangeTextSize">Change Text Size</string>
+    <string name="ChangeTextColor">Change text color</string>
+    <string name="BlankText"></string>
+</resources>
